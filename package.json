@@ -1,5 +1,5 @@
 {
-  "name": "@dsafanyuk/homebridge-smarthq",
+  "name": "homebridge-smarthq-test",
   "displayName": "SmartHQ",
   "type": "module",
   "version": "0.3.0",
