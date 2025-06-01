@@ -1,30 +1,20 @@
 {
-  "name": "@homebridge-plugins/homebridge-smarthq",
+  "name": "@dsafanyuk/homebridge-smarthq",
   "displayName": "SmartHQ",
   "type": "module",
   "version": "0.3.0",
   "description": "The SmartHQ plugin allows you to interact with SmartHQ Devices in HomeKit and with Siri.",
   "author": {
-    "name": "donavanbecker",
-    "url": "https://github.com/donavanbecker"
+    "name": "dsafanyuk",
+    "url": "https://github.com/dsafanyuk"
   },
   "maintainers": [
     "donavanbecker"
   ],
   "license": "ISC",
-  "funding": [
-    {
-      "type": "Paypal",
-      "url": "https://www.paypal.me/donavanbecker"
-    },
-    {
-      "type": "GitHub",
-      "url": "https://github.com/sponsors/donavanbecker"
-    }
-  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/homebridge-plugins/homebridge-smarthq.git"
+    "url": "git+https://github.com/dsafanyuk/homebridge-smarthq"
   },
   "bugs": {
     "url": "https://github.com/homebridge-plugins/homebridge-smarthq/issues"
