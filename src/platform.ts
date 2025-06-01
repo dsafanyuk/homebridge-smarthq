@@ -251,6 +251,9 @@ export class SmartHQPlatform implements DynamicPlatformPlugin {
             axios.get(`/appliance/${device.applianceId}/feature`),
           ])
           this.debugLog(`Device: ${JSON.stringify(device)}`)
+          this.debugLog(`Features: ${JSON.stringify(features)}`)
+          this.debugLog(`data: ${JSON.stringify(details)}`)
+
           switch (device.type) {
             case 'Dishwasher':
               await this.createSmartHQDishWasher(userId, device, details, features)
@@ -266,6 +269,7 @@ export class SmartHQPlatform implements DynamicPlatformPlugin {
               break
             case 'Portable AC':
               await this.createSmartHQPortableAC(userId, device, details, features)
+              break
             default:
               await this.warnLog(`Device Type Not Supported: ${device.type}`)
               break
