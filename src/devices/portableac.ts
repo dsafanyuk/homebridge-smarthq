@@ -116,6 +116,9 @@ export class SmartHQPortableAC extends deviceBase {
       .onGet(() => this.readErd(ERD_TYPES.AC_POWER_STATE))
       .onSet(value => this.writeErd(ERD_TYPES.AC_POWER_STATE, value))
 
+    PortableACPowerService
+      .getCharacteristic(this.platform.Characteristic.CurrentHeaterCoolerState)
+      .onGet(() => this.readErd(ERD_TYPES.AC_WAC_OP_MODE))
     // PortableACPowerService.getCharacteristic(this.platform.Characteristic.CurrentHeaterCoolerState)
     //   .onGet(() => this.readErd(ERD_TYPES.AC_WAC_OP_MODE))
     //
