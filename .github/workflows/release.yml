@@ -9,7 +9,6 @@ jobs:
     uses: homebridge/.github/.github/workflows/nodejs-build-and-test.yml@latest
     with:
       enable_coverage: false
-      node-version: 20  # ✅ Force compatible Node.js version
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -18,7 +17,5 @@ jobs:
     permissions:
       id-token: write
     uses: homebridge/.github/.github/workflows/npm-publish-esm.yml@latest
-    with:
-      node-version: 20  # ✅ Also enforce here
     secrets:
       npm_auth_token: ${{ secrets.npm_token }}
